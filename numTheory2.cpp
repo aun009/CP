@@ -102,30 +102,12 @@ ll mod_sub(ll a, ll b, ll m) {return (((a % m - b % m) % m) + m) % m;}
 
 // Solution function
 void solve() {
-    int noOfMonsters, hpInc;
-    cin >> noOfMonsters >> hpInc;
-
-    int arr[noOfMonsters];
-    for (int i = 0; i < noOfMonsters; i++) {
-        cin >> arr[i];
-    }
-
-    // Sort the array in descending order
-    sort(arr, arr + noOfMonsters, greater<int>());
-
-    ll minAttack = 0;
-
-    // Calculate the minimum attack required
-    for (int i = 0; i < noOfMonsters; i++) {
-        ll currentHealth = arr[i] + (ll)i * hpInc;
-        minAttack = max(minAttack, currentHealth);
-    }
-
-    cout << minAttack << '\n';
+    // TODO: Add logic for the problem here
+    
 }
 
 // Main function
-signed main() {
+int main() {
     fastio();
     #ifndef nacool2004
         freopen("Errorf.in", "w", stderr);
